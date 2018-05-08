@@ -1,0 +1,32 @@
+<div style="text-align: center">
+    <div class="container-fluid">
+   
+      <div class="card row">
+          <div class="col-md-6" *ngFor="let country of currentCountry" >
+            <div class="card-header" >
+             
+          <img class="card-img-top img-responsive" src={{country.flag}} alt="Card image cap">
+        
+           
+        
+          <ul class="list-group list-group-flush">
+              <h5 class="card-title">Country Name : {{country.name | uppercase}} </h5>
+            <li class="list-group-item">Country Capital : {{country.capital}}</li>
+            <li class="list-group-item">Country Currency : {{country.currencies[0].name}}</li>
+            <li class="list-group-item">Country Timezone : {{country.timezones}}</li>
+            <li class="list-group-item">Country SubRegion : {{country.subregion}}</li>
+            <li class="list-group-item">Country Language : {{country.languages[0].name}}</li>
+          </ul>
+          <div class="card-body">
+           <button class="btn btn-primary" [routerLink]= "['/name',country.name]">View</button> 
+           <button class="btn btn-primary" (click)=goBackToPreviousPage()>Go Back</button> 
+          </div>
+        </div>
+      </div>
+  </div>
+    </div>
+  
+  </div>
+
+
+ 

@@ -1,0 +1,16 @@
+.card-header {
+    border-style: solid;
+    margin :2%;
+    padding: 3%;
+ 
+}
+
+.card-img-top{
+    width: 100%;
+    display:block;
+    height:250px;
+   
+}
+.card-body .btn{
+    margin:0 15% 0 15%;
+}
